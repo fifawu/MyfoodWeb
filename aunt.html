@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>食堂首页</title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+
+		<style>
+			ul {
+				font-size: 14px;
+				color: #8f8f94;
+			}
+
+			.mui-btn {
+				padding: 10px;
+			}
+
+			.area {
+				margin: 20px auto 0px auto;
+			}
+
+			.mui-input-group:first-child {
+				margin-top: 20px;
+			}
+
+			.mui-input-group label {
+				width: 42%;
+			}
+
+			.mui-input-row label~input,
+			.mui-input-row label~select,
+			.mui-input-row label~textarea {
+				width: 58%;
+			}
+
+			.mui-checkbox input[type=checkbox],
+			.mui-radio input[type=radio] {
+				top: 6px;
+			}
+
+			.mui-content-padded {
+				margin-top: 35px;
+			}
+
+			.mui-btn {
+				padding: 10px;
+			}
+
+			.mui-input-row label~input,
+			.mui-input-row label~select,
+			.mui-input-row label~textarea {
+				margin-top: 1px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="padding-right: 15px;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="stutitle" class="mui-title">最最可爱的食堂姐姐</h1>
+			<button id='refreshBtn' class=" mui-pull-right mui-btn-link">刷新</button>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#main">
+				<span class="mui-icon mui-icon-list"></span>
+				<span class="mui-tab-label">订餐统计</span>
+			</a>
+			<a class="mui-tab-item" href="#breakfast">
+				<span class="mui-icon mui-icon-star"></span>
+				<span class="mui-tab-label">早餐配送</span>
+			</a>
+			<a class="mui-tab-item" href="#lunch">
+				<span class="mui-icon mui-icon-starhalf"></span>
+				<span class="mui-tab-label">午餐配送</span>
+			</a>
+			<a class="mui-tab-item" href="#supper">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">晚餐配送</span>
+			</a>
+		</nav>
+		<div class="mui-content">
+			<div id="main" class="mui-control-content mui-active">
+				<div class="mui-content">
+					<div class="mui-content-padded" id="countOrder">
+						<div class="mui-card">
+							<div class="mui-card-header" style="color: crimson;font-weight: bold;">提示：</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									还没有任何数据！
+								</div>
+							</div>
+							<div class="mui-card-footer" style="color: crimson;">管理员</div>
+						</div>   
+					</div>
+				</div>
+			</div>
+			<div id="breakfast" class="mui-control-content">
+				<div class="mui-content">
+					<div class="mui-content-padded" id="breakfastOrder">
+						<div class="mui-card">
+							<div class="mui-card-header" style="color: crimson;font-weight: bold;">提示：</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									还没有任何数据！
+								</div>
+							</div>
+							<div class="mui-card-footer" style="color: crimson;">管理员</div>
+						</div>  
+					</div>
+				</div>
+			</div>
+			<div id="lunch" class="mui-control-content">
+				<div class="mui-content">
+					<div class="mui-content-padded" id="lunchOrder">
+						<div class="mui-card">
+							<div class="mui-card-header" style="color: crimson;font-weight: bold;">提示：</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									还没有任何数据！
+								</div>
+							</div>
+							<div class="mui-card-footer" style="color: crimson;">管理员</div>
+						</div>  
+					</div>
+				</div>
+			</div>
+			<div id="supper" class="mui-control-content">
+				<div class="mui-content">
+					<div class="mui-content-padded" id="supperOrder">
+						<div class="mui-card">
+							<div class="mui-card-header" style="color: crimson;font-weight: bold;">提示：</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									还没有任何数据！
+								</div>
+							</div>
+							<div class="mui-card-footer" style="color: crimson;">管理员</div>
+						</div>  
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/aunt.js"></script>
+	</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>辅导员界面</title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+
+		<style>
+			ul {
+				font-size: 14px;
+				color: #8f8f94;
+			}
+
+			.mui-btn {
+				padding: 10px;
+			}
+
+			.area {
+				margin: 20px auto 0px auto;
+			}
+
+			.mui-input-group:first-child {
+				margin-top: 20px;
+			}
+
+			.mui-input-group label {
+				width: 42%;
+			}
+
+			.mui-input-row label~input,
+			.mui-input-row label~select,
+			.mui-input-row label~textarea {
+				width: 58%;
+			}
+
+			.mui-checkbox input[type=checkbox],
+			.mui-radio input[type=radio] {
+				top: 6px;
+			}
+
+			.mui-content-padded {
+				margin-top: 35px;
+			}
+
+			.mui-btn {
+				padding: 10px;
+			}
+
+			.mui-input-row label~input,
+			.mui-input-row label~select,
+			.mui-input-row label~textarea {
+				margin-top: 1px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="padding-right: 15px;">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 id="stutitle" class="mui-title">小哥哥小姐姐</h1>
+			<button id='refreshBtn' class=" mui-pull-right mui-btn-link">刷新</button>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#artpanel">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">艺术设计学院</span>
+			</a>
+			<a class="mui-tab-item" href="#elepanel">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">机电工程学院</span>
+			</a>
+			<a class="mui-tab-item" href="#infopanel">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">信息工程学院</span>
+			</a>
+		</nav>
+		<div class="mui-content">
+			<div id="artpanel" class="mui-control-content mui-active">
+				<div class="mui-content">
+					<div class="mui-content-padded" id="artContent">
+						<div class="mui-card">
+							<div class="mui-card-header" style="color: crimson;font-weight: bold;">提示：</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									还没有任何数据！
+								</div>
+							</div>
+							<div class="mui-card-footer" style="color: crimson;">管理员</div>
+						</div>   
+					</div>
+				</div>
+			</div>
+			<div id="elepanel" class="mui-control-content">
+				<div class="mui-content">
+					<div class="mui-content-padded" id="eleContent">
+						<div class="mui-card">
+							<div class="mui-card-header" style="color: crimson;font-weight: bold;">提示：</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									还没有任何数据！
+								</div>
+							</div>
+							<div class="mui-card-footer" style="color: crimson;">管理员</div>
+						</div>  
+					</div>
+				</div>
+			</div>
+			<div id="infopanel" class="mui-control-content">
+				<div class="mui-content">
+					<div class="mui-content-padded" id="infoContent">
+						<div class="mui-card">
+							<div class="mui-card-header" style="color: crimson;font-weight: bold;">提示：</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									还没有任何数据！
+								</div>
+							</div>
+							<div class="mui-card-footer" style="color: crimson;">管理员</div>
+						</div>  
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/littlesister.js"></script>
+	</body>
+</html>

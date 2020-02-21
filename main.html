@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+
+		<style>
+			ul {
+				font-size: 14px;
+				color: #8f8f94;
+			}
+			.mui-btn {
+				padding: 10px;
+			}
+			.area {
+				margin: 20px auto 0px auto;
+			}
+			.mui-input-group:first-child {
+				margin-top: 20px;
+			}
+			.mui-input-group label {
+				width: 42%;
+			}
+			.mui-input-row label~input,
+			.mui-input-row label~select,
+			.mui-input-row label~textarea {
+				width: 58%;
+			}
+			.mui-checkbox input[type=checkbox],
+			.mui-radio input[type=radio] {
+				top: 6px;
+			}
+			.mui-content-padded {
+				margin-top: 35px;
+			}
+			.mui-btn {
+				padding: 10px;
+			}
+			.mui-input-row label~input, .mui-input-row label~select, .mui-input-row label~textarea{
+				margin-top: 1px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav" style="padding-right: 15px;">
+			<h1 id="stutitle" class="mui-title"></h1>
+			<button id="logout" class=" mui-pull-right mui-btn-link">Logout</button>
+		</header>
+		<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active" href="#main">
+						<span class="mui-icon mui-icon-home"></span>
+						<span class="mui-tab-label">Home</span>
+					</a>
+					<a class="mui-tab-item" href="#myhistory">
+						<span class="mui-icon mui-icon-list"></span>
+						<span class="mui-tab-label">History</span>
+					</a>
+					<a class="mui-tab-item" href="#order">
+						<span class="mui-icon mui-icon-compose"></span>
+						<span class="mui-tab-label">Order</span>
+					</a>
+					<a class="mui-tab-item" href="#changepass">
+						<span class="mui-icon mui-icon-gear"></span>
+						<span class="mui-tab-label">Setting</span>
+					</a>
+		</nav>
+		<div class="mui-content">
+			<div id="main" class="mui-control-content mui-active">
+				<div class="mui-content">
+					<div class="mui-content-padded">
+						<div class="mui-card">
+							<div class="mui-card-header" style="color: crimson;font-weight: bold;">Note</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									1.	Please order the dishes for the next day before eight o’clock at night the day before.</p>
+									2.	Drinks are available but not included in the combos: Cola and Sprite are sold in tins and bottles.</p>
+									3.	Delivery time to rooms in College Hotel: breakfast, lunch and dinner are delivered at around 8 o’clock, 11 o’clock and 16 o’clock respectively; while to rooms in Dormitory, the delivery time will be 20 minutes later accordingly.</p>
+									4.	Contact person for ordering food: Wang Yanjun
+									Mobile phone number: 18167183117, 15068111198 (also the wechat account).
+								</div>
+							</div>
+							<div class="mui-card-footer" style="color: crimson;">2020-02-11</div>
+						</div>    
+						<div class="mui-card">
+							<div class="mui-card-header" style="color: crimson;font-weight: bold;">Breakfast</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									Dishes:4 steamed buns and 2 boiled eggs.</p>
+									Price:5 YUAN.
+			
+								</div>
+							</div>
+							<div class="mui-card-footer" style="color: crimson;">2020-02-11</div>
+						</div>   
+						<div class="mui-card">
+							<div class="mui-card-header" style="color: crimson;font-weight: bold;">Lunch & Dinner</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									Dishes:</p>
+									A: New Orleans roasted wings, stewed chicken with potato, scrambled eggs with tomato, broccoli.</p>
+									B: braised chicken drumstick, fried chicken, potato slices, cauliflower.</p>
+									C: fried chicken, braised duck, scrambled eggs with tomato, shredded potatoes</p>
+									Price: 15 Yuan for each combo meal.
+								</div>
+							</div>
+							<div class="mui-card-footer" style="color: crimson;">2020-02-12</div>
+						</div> 
+						  <div class="mui-card">
+						  	<div class="mui-card-header" style="color: crimson;font-weight: bold;">Others</div>
+						  	<div class="mui-card-content">
+						  		<div class="mui-card-content-inner">
+						  			Cola or Sprite:</p>
+									3.5 YUAN per Bottle</p>
+						  			3 YUAN per Tin</p>
+									Rice: 1.5 YUAN</p>
+						  		</div>
+						  	</div>
+						  	<div class="mui-card-footer" style="color: crimson;">2020-02-12</div>
+						  </div> 
+					</div>
+				</div>
+			</div>
+			<div id="myhistory" class="mui-control-content">
+				<div class="mui-content">
+					<div class="mui-content-padded" id="historyOrder">
+						<div class="mui-card">
+							<div class="mui-card-header" style="color: crimson;font-weight: bold;">Note:</div>
+							<div class="mui-card-content">
+								<div class="mui-card-content-inner">
+									You have no order yet  !!!
+								</div>
+							</div>
+							<div class="mui-card-footer" style="color: crimson;">admin</div>
+						</div>                
+					</div>
+				</div>
+			</div>
+			<div id="order" class="mui-control-content">
+				<div class="mui-content">
+					<div class="mui-content-padded">
+						<div class="mui-card">
+							<div class="mui-card-header" style="color: crimson;font-weight: bold;">Order</div>
+							<div class="mui-card-content">
+								<form class="mui-input-group">
+									<div class="mui-input-row">
+										<label style="color: crimson;">Breakfast:</label>
+										<div class="mui-numbox" data-numbox-min='1' data-numbox-max='9'>
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="bk" class="mui-input-numbox" type="number" />
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>										
+									</div>
+									<div class="mui-input-row">
+										<label style="color: crimson;">Lunch</label>
+									</div>
+									<div class="mui-input-row">
+										<label>Suit A:</label>
+										<div class="mui-numbox" data-numbox-min='1' data-numbox-max='9'>
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="la" class="mui-input-numbox" type="number" />
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>										
+									</div>
+									<div class="mui-input-row">
+										<label>Suit B:</label>
+										<div class="mui-numbox" data-numbox-min='1' data-numbox-max='9'>
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="lb" class="mui-input-numbox" type="number" />
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>										
+									</div>
+									<div class="mui-input-row">
+										<label>Suit C:</label>
+										<div class="mui-numbox" data-numbox-min='1' data-numbox-max='9'>
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="lc" class="mui-input-numbox" type="number" />
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>										
+									</div>
+									<div class="mui-input-row">
+										<label>Cola (bottle):</label>
+										<div class="mui-numbox" data-numbox-min='1' data-numbox-max='9'>
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="lco" class="mui-input-numbox" type="number" />
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>										
+									</div>
+									<div class="mui-input-row">
+										<label>Sprite (bottle):</label>
+										<div class="mui-numbox" data-numbox-min='1' data-numbox-max='9'>
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="lsp" class="mui-input-numbox" type="number" />
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>										
+									</div>
+									<div class="mui-input-row">
+										<label>Rice:</label>
+										<div class="mui-numbox" data-numbox-min='1' data-numbox-max='9'>
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="lrice" class="mui-input-numbox" type="number" />
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>										
+									</div>
+									<div class="mui-input-row">
+										<label style="color: crimson;">Dinner</label>
+									</div>
+									<div class="mui-input-row">
+										<label>Suit A:</label>
+										<div class="mui-numbox" data-numbox-min='1' data-numbox-max='9'>
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="sa" class="mui-input-numbox" type="number" />
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>										
+									</div>
+									<div class="mui-input-row">
+										<label>Suit B:</label>
+										<div class="mui-numbox" data-numbox-min='1' data-numbox-max='9'>
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="sb" class="mui-input-numbox" type="number" />
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>										
+									</div>
+									<div class="mui-input-row">
+										<label>Suit C:</label>
+										<div class="mui-numbox" data-numbox-min='1' data-numbox-max='9'>
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="sc" class="mui-input-numbox" type="number" />
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>										
+									</div>
+									<div class="mui-input-row">
+										<label>Cola (bottle):</label>
+										<div class="mui-numbox" data-numbox-min='1' data-numbox-max='9'>
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="sco" class="mui-input-numbox" type="number" />
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>										
+									</div>
+									<div class="mui-input-row">
+										<label>Sprite (bottle):</label>
+										<div class="mui-numbox" data-numbox-min='1' data-numbox-max='9'>
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="ssp" class="mui-input-numbox" type="number" />
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>										
+									</div>
+									<div class="mui-input-row">
+										<label>Rice:</label>
+										<div class="mui-numbox" data-numbox-min='1' data-numbox-max='9'>
+											<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+											<input id="srice" class="mui-input-numbox" type="number" />
+											<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+										</div>										
+									</div>
+								</form>
+							</div>
+							<div class="mui-card-footer">
+								<button id='submitOrder' class="mui-btn mui-btn-block mui-btn-primary">Submit</button>
+							</div>
+						</div>                
+					</div>
+				</div>
+			</div>
+			<div id="changepass" class="mui-control-content">
+				<div class="mui-content">
+					<div class="mui-content-padded">
+						<form class="mui-input-group">
+							<div class="mui-input-row">
+								<label>Old Password:</label>
+								<input id='oldpass' type="password" class="mui-input-clear mui-input" placeholder="Old Password">
+							</div>
+							<div class="mui-input-row">
+								<label>New Password:</label>
+								<input id='newpass' type="password" class="mui-input-clear mui-input" placeholder="8-15 chars">
+							</div>
+							<div class="mui-input-row">
+								<label>Repeat:</label>
+								<input id='newpassagin' type="password" class="mui-input-clear mui-input" placeholder="8-15 chars">
+							</div>
+						</form>
+						<div class="mui-content-padded">
+							<button id='changePass' class="mui-btn mui-btn-block mui-btn-primary">Change</button>
+						</div>             
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/stu.js"></script>
+	</body>
+</html>
